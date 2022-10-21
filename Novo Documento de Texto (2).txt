@@ -1,0 +1,148 @@
+<html>
+<head></head>
+<link href="estilo.css" rel="stylesheet">
+<body>
+
+
+
+JavaScript
+Operações simples com popups em JavaScript
+Os popups são janelas extras, criadas dentro de uma página “painel”. Essa página pode ser chamada de página pai ou mãe, e o popup, página filha. Essas páginas normalmente são bem simples, criadas para, por exemplo, apresentarem uma imagem, ou qualquer outro arquivo de mídia, não sendo isso uma exceção. O primeiro código, a seguir, irá mostrar como abrir um popup, de forma bem básica, será apenas para que o estudante, que ainda não conheça como isso funciona, possa se acostumar com o código.
+
+Abrindo popups
+<html>
+<head>
+<script language=javascript type="text/javascript">
+function newPopup(){
+varWindow = window.open ('popup.html', 'popup')
+}
+</script>
+</head>
+<body>
+<a href="javascript:newPopup()">Abrir popup</a>
+</body>
+</html>
+Listagem 1. Exemplo básico de como abrir um popup
+Logo abaixo, segue-se a explicação de cada linha do código:
+
+function newPopup()
+Primeiramente, devemos criar uma função, cujo nome dei newPopup(). Esse nome é opcional, logo, se você quiser por outro nome qualquer, fique a vontade, mas é melhor sempre usar textos fáceis de lembrar e pouco complexos. Quanto aos parênteses, é obrigatório para o código funcionar.
+
+{varWindow = window.open ('popup.html', 'popup') }
+Primeiramente, definiremos uma variável. Nesse código, seus primeiros caracteres são opcionais; devem ser postos, mas você pode por o que quiser, portanto que terminem com “Window”, assim como no exemplo acima. window.open é um código para abrir arquivos, no caso, o popup. Dentro dos parênteses que se seguem agora, no primeiro conjunto de aspas simples, pomos o endereço do popup; e no segundo, pomos seu nome, esse, fica a seu critério. Toda essa linha deve ficar dentro de chaves, demonstrando ser o valor da função anteriormente criada. E todas essas duas linhas explicadas até agora, devem estar dentro da tag head, diferentemente do código que se segue, que fica dentro da tag body.
+
+<a href="javascript:newPopup()">Abrir popup</a>
+Não explicarei a tag <a>, pois esse já é assunto básico de HTML. O código que está dentro das aspas faz correspondência a function, que criamos logo acima. O newPopup() é o nome da função, lembra? Esse código deve ser precedido por “javascript:”, senão o navegador, ao invés de executar a função newPopup(), irá procurar um diretório (pasta e arquivo) com esse nome. Até agora, esse código nada tem de especial com o simples do HTML, mas suas diferenças aparecerão logo.
+
+É interessante criar uma função, pois caso você queira criar vários links para o mesmo popup, o código ficará bem menos extenso. Mas, por motivo qualquer, você queira fazer tudo dentro da tag body, usará esse código:
+
+<body>
+<a href="" onClick="javascript:window.open ('popup.html') ; return false">Abrir popup</a>
+</body>
+Listagem 2. Exemplo básico de como abrir um popup sem function
+Como nesse caso, se não for usar uma function, aconselho pôr o código JavaScript em onClick, ao invés de em a href, pois nesse último, tanto a janela pai como a janela filha serão alteradas. Não se esqueça de por o return false, para anular qualquer valor que tiver o a href, e deixar todo o gerenciamento do link com o onClick.
+
+Como gerenciar popups
+Agora, que o código básico para abrir um popup já foi mostrado, poderei ensinar como gerenciar a abertura desses popups. Leia as propriedades abaixo:
+
+width	Serve para especificar a largura do popup;
+height	Serve para especificar a altura do popup;
+top	Serve para especificar o quão distante estará o popup do topo da tela;
+left	Serve para especificar o quão distante estará o popup do lado esquerdo da tela;
+scrollbars	Serve para manipular a barra de rolagem do popup;
+resizable	Serve para manipular a opção de redimensionar o popup;
+directories	Serve para manipular a barra de diretórios;
+menubar	Serve para manipular o menu de um browser;
+location	Serve para manipular a barra de endereços de um popup;
+status	Serve para manipular a barra de status de um popup;
+toolbar	Serve para manipular a barra de ferramentas de um popup;
+titlebar	Serve para manipular a barra de título de um popup.
+Essas propriedades, como ficou claro, servem para manipular a janela do browser que irá carregar o popup. Para usá-las, o código é esse:
+
+<head>
+<script language=javascript type="text/javascript">
+function newPopup(){
+varWindow = window.open (
+'popup.html',
+'pagina',
+"width=350, height=255, top=100, left=110, scrollbars=no " );
+}
+</script>
+</head>
+Listagem 3. Exemplo das propriedades da janela que irá carregar o popup que podem ser gerenciados
+O código acima foi desenvolvido apenas para elucidar o uso do gerenciamento das propriedades que podem ser alteradas em uma janela popup.
+
+Eu pus apenas alguns poucos exemplos, mas com base neles, o leitor poderá prosseguir facilmente. Talvez, um fato interessante que deva ser notado, é que não foi preciso pôr os valores, sejam numéricos ou booleanos (verdadeiros ou falsos) entre aspas, como acontece no HTML. Nesse caso, é por que eles estão dentro de aspas coletivas. No caso de scrollbars, também entre os do mesmo tipo desse, os valores serão expressos em yes ou no, como verdadeiro ou falso.
+
+É importante saber que quase a maioria desses códigos não são aceitos nos navegadores modernos. Por exemplo, o status. Antigamente, a barra de status era fixa, logo, havia sentido em deixa-la lá ou não, mas hoje em dia, a maioria dos browsers modernos usam barras de status só quando se passa em cima de um link, e também, acredito eu, por motivos de segurança, alguns desses não aceitam o status, entre outros. Mas entre esses, o Internet Explorer ainda aceita a maioria.
+
+Criando popups diretamente do navegador
+Esse é um tema bem interessante. É possível criar popups diretamente do browser, ou seja, sem arquivos salvos. Esses popups fazem tudo que uma página normal faz.
+
+<head>
+<script language=javascript type= "text/javascript">
+newpopupWindow = window.open ('', 'pagina', "width=250 height=250");
+newpopupWindow.document.write ("Aqui você pode por o que quiser");
+</script>
+</head>
+Listagem 4. Exemplo básico de como criar um novo popup diretamente do browser
+Esse exemplo é bem simples. Logo ao iniciar a página de controle, ou página pai/mãe, será carregado um popup 250x250 pixels, e ele terá escrito na tela “Aqui você pode pôr o que quiser”, assim como no exemplo acima. Dentro desses parênteses, você pode pôr não somente textos, como imagens, mídias, e até outros scripts. Mas não se esqueça de dentro dessas aspas duplas, só usar aspas individuais. Por exemplo:
+
+<head>
+<script language=javascript type= "text/javascript">
+newpopupWindow = window.open ('', 'pagina', "width=250 height=250");
+newpopupWindow.document.write ("Aqui você pode por o que quiser, por exemplo, uma imagem. <br/> <img src='imagem.jpg'> <br/> Não se esqueça de não usar aspas duplas, só aspas individuais" );
+</script>
+</head>
+Listagem 5. Exemplo de como usar elementos mais complexos dentro de um popup criado diretamente pelo browser
+Nesse último exemplo, coloquei uma imagem dentro do popup, e poderia por muito mais.
+
+Mas, se ao invés do popup carregar diretamente após o carregamento da página mãe, você quiser que ele abra através de um link, basta adicionar o código em function, e criar o link correspondente em body.
+
+<html>
+<head>
+<script language=javascript type="text/javascript">
+function criarPopup(){
+newWindow = window.open ('', 'pagina');
+newWindow.document.write ("Este é um novo popup <br/> <img src='imagem.jpg' width='100' height='100'>");
+}
+</script>
+</head>
+<body>
+<a href="javascript:criarPopup()">Criar Popup</a>
+</body>
+</html>
+Listagem 6. Exemplo de como criar um popup através de um link, pelo método function
+Fechando um popup
+Para se fechar um popup também é bem fácil.
+
+<html>
+<head>
+<script language=javascript type="text/javascript">
+function abrirPopup(){
+abrirWindow = window.open('', 'pagina')
+}
+
+function fecharPopup(){
+fecharWindow = abrirWindow.close()
+}
+</script>
+</head>
+<body>
+
+<a href="javascript:abrirPopup()">Abrir popup</a>
+<br/>
+<a href="javascript:fecharPopup()">Fechar Popup</a>
+</body>
+</html>
+Listagem 7. Exemplo de como fechar um popup
+Não se esqueça daquele velho probleminha de que os popups têm que ser autorizadas para funcionarem. Então, se os códigos derem errado, verifique se o popup não foi bloqueado, ou tente usar o Internet Explorer, ele é menos restritivo com popups.
+
+saiba mais Saiba mais sobre Boas práticas em JavaScript
+Esse artigo apenas explicou as funções básicas de um popup, que é o seu objetivo, correspondendo, respectivamente, ao título. Além dessas funções expostas aqui, existem inúmeras outras bem mais complexas, como conectar vários popups, fazendo com que eles interajam entre si; configurar uma rolagem automática aos popups logo após eles serem carregados, ou em tempo determinado, entre muitas outras.
+
+Por hoje é só, até a próxima.
+
+
+</body>
+</html>

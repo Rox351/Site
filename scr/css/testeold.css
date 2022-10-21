@@ -1,0 +1,109 @@
+*{margin: 0; padding: 0;}
+
+body{
+	background: #FFEFD5 !important;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	/*background-image: url(../Imagens/donizete.png);*/
+	/*background-size: 600px;*/
+	/*margin-top: -10px;*/
+	background-image: center;
+	
+}
+
+
+
+.menu{
+	list-style:none;
+	border:1px solid #000000;
+	float:left;
+	
+}
+
+.menu li{
+	position:relative;
+	float:left;
+	border-right:1px solid #483D8B;
+}
+
+.menu li a{
+	color:#00000; 
+	text-decoration:none; 
+	padding:12px 15px; display:block;}
+
+.menu li a:hover{
+	background:##ADFF2F;
+	color:#FF8C00;
+	-moz-box-shadow:0 3px 10px 0 #CCC;
+	-webkit-box-shadow:0 8px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #696969;
+}
+
+.menu li  ul{
+	position:absolute;
+	top:35px;
+	left:0;
+	background-color:##2F4F4F;
+	display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+	border:1px solid #2F4F4F;
+	display:block;
+	width:100px;
+}
+
+/*Novo Menu*/
+
+.menu2{
+	list-style:none;
+	border:1px solid #ADD8E6;
+	float:left;
+	
+}
+
+.menu2 li{
+	position:relative;
+	float:left;
+	border-right:1px solid #87CEEB;
+}
+
+.menu2 li a{
+	color:#556B2F; 
+	text-decoration:none; 
+	padding:12px 15px; display:block;}
+
+.menu2 li a:hover{
+	background:#333;
+	color:#FF00FF;
+	-moz-box-shadow:0 3px 10px 0 #CCC;
+	-webkit-box-shadow:0 3px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #696969;
+}
+
+.menu2 li  ul{
+	position:absolute;
+	top:35px;
+	left:0;
+	background-color:#20B2AA;
+	display:none;
+}
+
+.menu2 li:hover ul, .menu li.over ul{display:block;}
+
+.menu2 li ul li{
+	border:1px solid #696969;
+	display:block;
+	width:100px;
+}
+
+
+
+
+
+/*h3{ 
+	margin-top: 45px; 
+	
+}*/

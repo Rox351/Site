@@ -1,0 +1,39 @@
+
+**********Cores dos textos/Paineis**********
+}
+nav ul li a:hover {
+  color: white;
+}
+nav ul li.active a {
+  color: white;
+}
+nav ul li:nth-child(1) a {
+  background-color: #69AF23;
+}
+nav ul li:nth-child(2n) a {
+  background-color: #008737;
+}
+nav ul li:nth-child(3n) a {
+  background-color: #FFC300;
+}
+nav ul li:nth-child(4n) a {
+  background-color: #E62D87;
+}
+nav ul li:nth-child(5n) a {
+  background-color: #01427a;
+ } 
+  nav ul li:nth-child(6n) a {
+  background-color: #552382;
+ } 
+  nav ul li:nth-child(7n) a {
+  background-color: #07a6db;
+  }
+  
+ nav ul li:nth-child(8n) a {
+  background-color: #e60b16;
+  } 
+}
+.menu{
+	list-style:none;
+	border:1px solid #ADD8E6;
+	float:left;

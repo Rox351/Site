@@ -1,0 +1,130 @@
+ #menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+}
+ 
+nav {
+  position: fixed;
+  top: 10%;
+  left: 82%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  oveflow: hidden;
+}
+
+
+nav ul li a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateX(-10%);
+  border-radius: 50px;
+  width: 120%;
+  text-align: Center;
+  transition-duration: 0.25s;
+}
+
+
+**********Cores dos textos/Paineis**********
+}
+nav ul li a:hover {
+  color: white;
+}
+nav ul li.active a {
+  color: white;
+}
+nav ul li:nth-child(1n) a {
+  background-color: #1C1C1C;
+    border: 2px solid #070d12;
+    border-radius: 50px;
+}
+nav ul li:nth-child(2n) a {
+  background-color: #585858;
+    border: 2px solid #070d12;
+    border-radius: 50px;
+}
+nav ul li:nth-child(3n) a {
+  background-color: #848484;
+    border: 2px solid #070d12;
+    border-radius: 50px;
+}
+nav ul li:nth-child(4n) a {
+  background-color: #0000FF;
+}
+nav ul li:nth-child(5n) a {
+  background-color: #01427a;
+ } 
+  nav ul li:nth-child(6n) a {
+  background-color: #07a6db;
+ } 
+  nav ul li:nth-child(7n) a {
+  background-color: #04B4AE;
+  }
+  
+ nav ul li:nth-child(8n) a {
+  background-color: #0B615E;
+  } 
+}
+.menu{
+	list-style:none;
+	border:1px solid #ADD8E6;
+	float:left;
+justify-content: center
+	
+}
+
+.menu li{
+	position:relative;
+
+	float:left;  
+	display: flex;
+   	justify-content: center;
+    	border-right:1px solid #87CEEB;
+}
+
+.menu li a{
+	color:556B2F; 
+	text-decoration:none; 
+	padding:12px 15px; display:block;}
+
+.menu li a:hover{
+	background:#04B4AE;
+	color:#08088A;
+	-moz-box-shadow:0 3px 10px 50 #CCC;
+	-webkit-box-shadow:0 7px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #696969;
+}
+
+.menu li  ul{
+	position:absolute;
+	top:35px;
+	left:0;
+	display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+	border:0px solid #696969;
+	display:block;
+	width:100px;
+}
+

@@ -1,0 +1,6 @@
+Preto = #000000 – ausencia de todas as cores;
+Branco = #ffffff – união de todas as cores;
+Vermelho = #ff0000 – itensidade máxima de vermelho e 0 das outras cores;
+Verde = #00ff00 – itensidade máxima de verde e 0 das outras cores;
+Azul = #0000ff – itensidade máxima de azul e 0 das outras cores;
+Amarelo = #ffff00 – intensidade máxima de vermelho e verde e nada da cor azul.
