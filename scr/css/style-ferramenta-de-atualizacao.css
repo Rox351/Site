@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../Imagens/maxresdefault.jpg) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+ background:  url("../Imagens/lforce1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Roboto";
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+
+h1{
+color: #fff;
+}
+
+h2 {
+color: #00BFFF;
+}
+
+h3 {
+color: black;
+}
+
+h4 {
+color: #00FF7F;
+}
+
+h5 {
+color: #DC143C	;
+}
+
+div ul.active a {
+  color: white;
+	text-decoration:none; 
+	padding:1px 15px; display:block;
+}
+
+div ul a:hover{
+	color:#08088A;
+	-moz-box-shadow:0 3px 10px 50px #CCC;
+	-webkit-box-shadow:0 1px 10px 0 #fff;
+	text-shadow:0px 0px 5px #696969;
+}
+
+
+div {
+ 
+  background-color: #A9A9A9;
+  display: block;
+  padding: 10px 40px;
+    color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 20px ;
+  transform: translateX(175%);
+  border-radius: 30px;
+  width: 19%;
+  bottom: -20px;
+  transition-duration: 0.5s;
+  text-align: Center;
+  transition-duration: 0.25s;
+    border: 2px solid #070d12;
+    border-radius: 50px;
+}
+
+h20 {
+ background-color: #A9A9A9;
+  padding: 10px 40px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 20px ;
+  transform: translateX(175%);
+  border-radius: 30px;
+  width: 19%;
+  transition-duration: 0.5s;
+  text-align: Center;
+  transition-duration: 0.25s;
+    border: 2px solid #070d12;
+
+}
+
+ul.active a {
+  color: white;
+	text-decoration:none; 
+	padding:1px 15px; display:block;
+}
+
+ a:hover{
+	color:#08088A;
+	-moz-box-shadow:0 3px 10px 50px #CCC;
+	-webkit-box-shadow:0 1px 10px 0 #fff;
+	text-shadow:0px 0px 5px #696969;
+}

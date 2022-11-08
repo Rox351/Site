@@ -25,6 +25,42 @@ body {
   background-image:url(Sem Título-1.jpg);
 }
  
+ul{
+  position: fixed;
+  top: 10%;
+  left: 56%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+.botao {
+
+  list-style: none;
+  right: 0;
+  width: 85em;
+
+}
+
+h {
+    color: #000;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: -0px 0 0 0;
+    padding: 10px 50px;
+    background-color: #848484;
+    border: 3px  solid #070d12;
+    border-radius: 50px;
+    
+}
+
+
+h:hover {
+  color: #fff;
+}
+
+}
+
  #menu {
   position: fixed;
   right: 0;

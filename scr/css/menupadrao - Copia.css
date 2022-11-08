@@ -72,7 +72,7 @@ nav ul li a {
   font-size: 18px;
   position: relative;
   color: rgba(255, 255, 255, 0.8);
-  transform: translateX(-10%);
+  transform: translateX(25%);
   border-radius: 50px;
   width: 120%;
   text-align: Center;
@@ -166,8 +166,10 @@ justify-content: center
 }
 
 
-h2 {
-	margin-top: -9.7em;
+h2  {
+	position:relative;
+	left:-27em;
+	margin: -1.6em;
 	color: #fff;
 	padding: 10px 10px;
  	border: 2px solid #070d12;

@@ -150,6 +150,13 @@ h2{
 	center: 150px;	
 	color: green;
 } 
+
+hb{
+	border-radius: 15px;
+    	border: 1px solid #ccc;
+	color: #ccc;
+}
+
 //*#btnconectabat{
 	width: 50px;
 	center: 50px;	

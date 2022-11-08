@@ -17,35 +17,36 @@
 
 <body>
     <form action="exibir-dados.php" class="formulario" method="post"> 
-        <p> Formulario de Atendimento</p>
+        <p> <h2>Formulario de Atendimento</h2></p>
         
         <div class="field">
-            <label for="nome">SAP:</label>
+            <label for="nome"><h2>SAP:</h2></label>
             <input type="text" id="nome" name="nome" placeholder="Digite SAP*" required>
         </div>
         
         <div class="field">
-            <label for="NOME">Nome:</label>
+            <label for="NOME"><h2>Nome:</h2></label>
             <input type="text" id="telefone" name="telefone" placeholder="Digite nome do Varejo">
         </div>
 
         <div class="field">
-            <label for="NOME">BINA:</label>
+            <label for="NOME"><h2>BINA:</h2></label>
             <input type="text" id="telefone" name="telefone" placeholder="Digite Telefone do Varejo">
         </div>
 
         <div class="field">
-            <label for="email">E-Mail:</label>
+            <label for="email"><h2>E-Mail:</h2></label>
             <input type="email" id="email" name="email" placeholder="Digite E-Mail do Varejo*" required>
         </div>        
-        <div class="field radiobox">
-            <span>Direcionado a plataforma bot</span>
-            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
-            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
-        </div>
+
         <div class="field">
-            <label for="mensagem">Sua mensagem:</label>
+            <label for="mensagem"><h2>Sua mensagem:</h2></label>
             <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+        <div class="field radiobox">
+            <span><h4>Direcionado a plataforma bot</h4></span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim"><hb>Sim</hb></label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao"><hb>Não</hb></label>
         </div>
 		
 	<form>

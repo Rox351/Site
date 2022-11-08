@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Arquivo</title>		
+		<link rel="shortcut icon" href="../Imagens/Ico.ico">
+<link rel="stylesheet" type="text/css"  href="../css/style-ferramenta-de-atualizacao.css" />		
+<link rel="stylesheet" type="text/css"  href="style.css" />
+
+	</head>
+	<body bgcolor="beige">
+
+
+
+
+<div>
+<ul class="active"><a href="../../Index.html	"="_blank"><b><h3>Home</h3></a><p></div></ul>
+<br>
+<hr>
+<h1>
+<b><p>
+</div>
+
+</body>
+
+<main>
+<main>
+  <h2> <code></code>Baixa no link abaixo arquivo de atualização e instalação do Xcall:</h2>
+
+  <p><h5>Arquivo para instalação e atualização do Xcall</h5></p>
+  <textarea id="txt" cols="60" rows="7" disabled>@echo off
+
+REM ---------------------- Parar Processo Xcall -------------
+Taskkill /im xCallToolbox.exe /f
+REM ---------------------- Parar Processo Xcall -------------
+
+REM ---------------------- Reparar Xcall -------------------
+IF EXIST "C:\Windows\SysWOW64" (
+		xcopy "C:\Program Files (x86)\Akiva Software\XCall Agent\*.txt" "C:\Sistemas\log_Xcall\%username%\" /y /i /d:%date:~3,2%/%date:~0,2%/%date:~6,4%
+		del "C:\Program Files (x86)\Akiva Software\XCall Agent\*.*" /Q /F
+		robocopy "\\alertbrasil.com.br\netlogon\Software\Xcall\BAT\XCall Agent" "C:\Program Files (x86)\Akiva Software\XCall Agent" /e  /r:0 /w:0
+		copy "\\alertbrasil.com.br\netlogon\Software\Atalhos\BAT\xCall Agente_683.lnk" "%USERPROFILE%\desktop\xCall Agente_683.lnk" /y
+    ) ELSE (
+		xcopy "C:\Program Files\Akiva Software\XCall Agent\*.txt" "C:\Sistemas\log_Xcall\%username%\" /y /i /d:%date:~3,2%/%date:~0,2%/%date:~6,4%
+		del "C:\Program Files\Akiva Software\XCall Agent\*.*" /Q /F
+		robocopy "\\alertbrasil.com.br\netlogon\Software\Xcall\BAT\XCall Agent" "C:\Program Files\Akiva Software\XCall Agent" /e /r:0 /w:0
+		copy "\\alertbrasil.com.br\netlogon\Software\Atalhos\BAT\xCall Agente_683.lnk" "%USERPROFILE%\desktop\xCall Agente_683.lnk" /y
+		xcopy "C:\Sistemas\log_Xcall\%username%\*.txt" "C:\Program Files (x86)\Akiva Software\XCall Agent\" /y /i /d:%date:~3,2%/%date:~0,2%/%date:~6,4%
+    )
+REM ---------------------- Reparar Xcall -------------------
+
+pause;
+:aa
+MSG * Xcall Reparado
+
+exit</textarea>
+<br>
+<br>
+<br>
+<hr>
+  <p><a href="nothing.html" id="link" download="Atualizador_Xcall.bat"><h20>Clique aqui para baixar o arquivo</h20></a></p></div>
+
+</main>
+
+</main>
+<script src="index.js"></script>
